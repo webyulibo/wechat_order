@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.253.107.228/wechat_order?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
