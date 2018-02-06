@@ -3,8 +3,20 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://10.253.107.228/wechat_order?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://10.253.104.230/wechat_order?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+  jackson:
+      default-property-inclusion: non_null
 server:
   context-path: /wechat_order
+
+wechat:
+   mpAppId: wx37e68cd846f418e7
+   mpAppSecret: a9eba6d8b083db03947d45225ff7f3ef
+  #mpAppId: wx37e68cd846f418e7
+  #mpAppSecret: a9eba6d8b083db03947d45225ff7f3ef
+  #mchId: 148xxxxxxxx
+  #mchKey: xxxxxxxxx
+  #keyPath: /var/weixin_cert/h5.p12
+  #notifyUrl: http://wechatorder.ysdx.com/sell/pay/notify
