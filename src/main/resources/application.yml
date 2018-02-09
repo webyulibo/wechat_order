@@ -8,15 +8,28 @@ spring:
     show-sql: true
   jackson:
       default-property-inclusion: non_null
+  redis:
+    host: 10.253.104.230
+    port: 6379
 server:
   context-path: /wechat_order
 
 wechat:
    mpAppId: wx37e68cd846f418e7
    mpAppSecret: a9eba6d8b083db03947d45225ff7f3ef
+   openAppId: wx37e68cd846f418e7
+   openAppSecret: a9eba6d8b083db03947d45225ff7f3ef
   #mpAppId: wx37e68cd846f418e7
   #mpAppSecret: a9eba6d8b083db03947d45225ff7f3ef
   #mchId: 148xxxxxxxx
   #mchKey: xxxxxxxxx
   #keyPath: /var/weixin_cert/h5.p12
   #notifyUrl: http://wechatorder.ysdx.com/sell/pay/notify
+
+templateId:
+    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+
+projectUrl:
+    wechatMpAuthorize: http://wechatorder.ngrok.xiaomiqiu.cn
+    wechatOpenAuthorize: http://wechatorder.ngrok.xiaomiqiu.cn
+    wechat_order: http://wechatorder.ngrok.xiaomiqiu.cn
